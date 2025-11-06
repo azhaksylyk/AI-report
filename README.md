@@ -33,12 +33,14 @@ All processing and reasoning are done **locally** — no external APIs required.
    cd AI-report
 
 2. **Create a virtual environment and install dependencies**
+    ```bash
     python -m venv .venv
     source .venv/bin/activate   # on Linux/Mac
     .venv\Scripts\activate      # on Windows
     pip install -r requirements.txt
 
 3. **Prepare environment variables**
+    ```bash
     LLAMA_MODEL_PATH=/path/to/ggml-model.bin
     EMBEDDING_MODEL=sentence-transformers/all-MiniLM-L6-v2
     FAISS_INDEX_DIR=src/models/faiss_index
